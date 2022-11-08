@@ -1,0 +1,841 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #fff;
+    letter-spacing: 15px;
+    margin-bottom: 2%;
+}
+
+header {
+    width: 100%;
+    height: 9%;
+}
+
+.promo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/promo_background.jpg);
+    background-size: cover;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+}
+
+.promo_inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+    background-color: rgba(82, 2, 110, .7);
+    border-radius: 25px;
+    margin-top: 3%;
+}      
+
+.nav {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav_link:before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.nav_link:hover::before {
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo_inner h2 {
+    width: 60%;
+    text-align: center; 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2em;
+}
+
+.form {
+    height: 49%;
+    width: 27%;
+    border-radius: 25px;
+    background-color: rgba(82, 2, 110, .7);
+    margin-bottom: 2%;
+}
+
+.promo_inner form {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+    color: rgba(132, 59, 92, .4);
+    padding-top: 1%;
+    padding-left: 2%;
+    border: none;
+    width: 82%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.form input:first-child {
+    margin-top: 15px;
+}
+
+.form input:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.form input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    color: rgba(132, 59, 92, .4);
+}
+
+.form button {
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-top: 8%;
+    font-size: 1.2em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    color: #fff;
+    border: none;
+    height: 15%;
+    background-color: rgba(202, 209, 94, 1);
+    border-radius: 10px;
+}
+
+.form p {
+    width: 60%;
+    text-align: center;
+    font-size: .8em;
+    font-family: 'Manrope', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form p span {
+    color: rgba(247, 189, 45, 1);;
+}
+
+.features {
+    height: 80vh;
+    width: 100%;
+}
+
+.container_2 {
+    height: 90%;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+}
+
+.left, .right {
+    height: 100%;
+    width: 45%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_card {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+    color: rgba(82, 2, 110, 1);
+    width: 100%;
+    height: 40%;
+    background-color: rgba(197, 89, 140, .5);
+    border-radius: 45px;
+    text-align: center;
+}
+
+.main_card p {
+    width: 46%;
+}
+
+.illustrations {
+    height: 50%;
+    width: 100%;
+}
+
+.left img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+div[class^=card] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    border-radius: 45px;
+    color: #fff;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); 
+}
+
+.right_row {
+    height: 38%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_column_1 {
+    height: 100%;
+    width: 50%;
+}
+
+.right_column_2 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_2, .card_8 {
+    width: 100%;
+    height: 100%;
+}
+
+.card_2 {
+    background-color: rgba(212, 195, 95, 1);
+}
+
+.card_2 p {
+    width: 92%;
+}
+
+.card_3, .card_4, .card_6, .card_7 {
+    width: 100%;
+    height: 48%;
+}
+
+.card_3 {
+    background-color: rgba(18, 32, 110, 1);
+}
+
+.card_3 p {
+    width: 79%;
+}
+
+.card_4 {
+    background-color: rgba(202, 209, 94, 1);
+}
+
+.card_4 p {
+    width: 79%;
+}
+
+.card_5 {
+    height: 20%;
+    width: 100%;
+    background-color: rgba(183, 100, 212, 1);
+}
+
+.card_6 {
+    background-color: rgba(248, 155, 55, 1);
+}
+
+.card_6 p {
+    width: 79%;
+}
+
+.card_7 {
+    background-color: rgba(99, 112, 183, 1);
+}
+
+.card_7 p {
+    width: 79%;
+}
+
+.card_8 {
+    background-color: rgba(152, 34, 90, 1);
+}
+
+.card_8 p {
+    width: 92%;
+}
+
+.services {
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+}
+
+.services h2 {
+    color: #52026E;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    width: 27%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27%;
+    width: 100%;
+}
+
+.row_courses_2 {
+    display: flex;
+    justify-content: space-between;
+    height: 45%;
+    width: 100%;
+}
+
+.row_courses_1, .row_courses_1_reverse {
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.row_courses_1 {
+    top: 0;
+    left: 0; 
+    position: relative;
+}
+
+div[class^=course] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    height: 100%;
+}
+
+.course_link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_3 {
+    width: 100%;
+    height: 100%;
+}
+
+.course_1 {
+    width: 22%;
+    background-color: rgba(152, 34, 90, 1);
+}
+
+.course_2 {
+    width: 14%;
+}
+
+.course_2, .course_5 {
+    background-color: rgba(18, 32, 110, 1);
+}
+
+.course_3 {
+    width: 22%;
+    background-color: rgba(212, 195, 95, 1);
+}
+
+.course_4 {
+    width: 14%;
+}
+
+.course_5 {
+    width: 22%;
+}
+
+.course_4, .course_6 {
+    background-color: rgba(183, 100, 212, 1);
+}
+
+.course_6 {
+    width: 20%;
+}
+
+.course_7 {
+    width: 15%;
+    background-color: rgba(202, 209, 94, 1);
+}
+
+.course_8 {
+    width: 29%;
+    background-color: rgba(99, 112, 183, 1);
+}
+
+.course_9 {
+    width: 17%;
+    background-color: rgba(248, 155, 55, 1);
+}
+
+.feedback {
+    width: 100%;
+    height: 100vh;
+}
+
+.container_4 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* 805 */
+    width: 78%; 
+    /* 1123 */
+    display: flex;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback h2 {
+    align-self: start;
+    color: #52026E;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    /* margin-bottom: 4%; */
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    background-color: rgba(152, 34, 90, 1);
+    border-radius: 50px;
+}
+
+.block p {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    width: 62%;
+    height: 83%;
+    margin-left: 2%;
+}
+
+.vector {
+    margin-top: 6%;
+    align-self: start;
+    width: 16%;
+    height: 26%;
+}
+
+.vector img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.students {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 34%;
+    height: 17%;
+}
+
+.arrow_1 {
+    cursor: pointer;
+    width: 6%;
+    height: 40px;
+    object-fit: cover;
+}
+
+.arrow_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photos_students {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    width: 79%;
+}
+
+.photo_1, .photo_2, .photo_3 {
+    height: 100%;
+}
+
+.photos_students img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow_2 {
+    cursor: pointer;
+    width: 6%;
+    height: 40px;
+    object-fit: cover;
+}
+
+.arrow_2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.student_name {
+    text-align: center;
+    width: 37%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.photos_students div[class^=photo] {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo_1, .photo_3 {
+    width: 24%;
+    height: 60%;
+}
+
+.photo_2 {
+    width: 40%;
+    height: 100%;
+}
+
+.student_name span {
+    color: rgba(183, 100, 212, 1);
+}
+
+.work_scheme {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/work_scheme_back.jpg);
+    background-size: cover;
+}
+
+.container_5 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* 805 */
+    width: 78%; 
+    /* 1123 */
+    display: flex;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.work_scheme h2 {
+    color: #52026E;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    align-self: start;
+    margin: 3% 0 2% 0;
+}
+
+.scheme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 63%;
+    height: 86%;
+    position: relative;
+}
+
+.scheme h3 {
+    text-align: center;
+    color: #52026E;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: .4em;
+    margin-bottom: 3%;
+}
+
+.scheme_arrow_1 {
+    object-fit: contain;
+    position: absolute;
+    width: 8%;
+    height: 16%;  
+    top: 11%;
+    right: 10%;
+}
+
+.scheme_arrow_2 {
+    object-fit: cover;
+    position: absolute;
+    width: 12%;
+    top: 33%;
+    right: 45%;
+}
+
+
+.scheme_arrow_3 {
+    object-fit: cover;
+    position: absolute;
+    width: 11%;
+    /* height: 11%; */
+    top: 49%;
+    right: 43%;
+}
+
+.scheme_arrow_4 {
+    object-fit: contain;
+    position: absolute;
+    width: 8%;
+    height: 10%;
+    top: 65%;
+    right: 46%;
+}
+
+.male_student_icon {
+    width: 13%;
+}
+
+.male_student_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.location   {
+    height: 90vh;
+    width: 100%;
+}
+
+.container_6 {
+    height: 100%;
+    /* 805 */
+    width: 78%; 
+    /* 1123 */
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_6 h2 {
+    color: #52026E;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+    width: 100%;
+    height: 10%;
+}
+
+.location_column_left {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.location_1 h3 {
+    font-size: 1.3em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: rgba(226, 126, 18, 1);
+    margin-bottom: 1%;
+}
+
+.location_2 h3 {
+    font-size: 1.3em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: rgba(18, 32, 110, 1);
+    margin-bottom: 1%;
+}
+
+.location_3 h3 {
+    font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    color: rgba(152, 34, 90, 1);
+    margin-bottom: 1%;
+}
+
+.location_1 p {
+    font-size: 1.1em;
+    color: #52026E;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.location_2 p {
+    font-size: 1.1em;
+    color: #52026E;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.location_3 p {
+    font-size: 1.1em;
+    color: #52026E;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.location_column_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90%;
+}
+
+.location_column_right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(248, 155, 55, 1);
+}
+
+.container_7 {
+    height: 100%;
+    /* 805 */
+    width: 90%; 
+    /* 1123 */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.sections {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Manrope', sans-serif;
+}
+
+.sections a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.section_1, .section_2 {
+    width: 50%;
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.icons i {
+    font-size: 2em;
+}
+
+.icons i:first-child {
+    margin-right: 4%;
+}
+
+
